@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  position: relative;
+  min-width: 315px;
+  max-width: 688px;
+  height: 300px;
+  background-color: grey;
+  margin: 20px;
+  flex-grow: 1;
+}
+
+header {
+  display: none;
+}
+
+@@media (min-width: 768px) {
+  header {
+    display: block;
+    height: 100px;
+    background-color: #0099cc;
+  }
+}
